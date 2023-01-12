@@ -3,7 +3,6 @@ import styled from "styled-components";
 //FiveStone
 export const Container = styled.div`
   /* width: ${(props) => props.width || "90vw"}; */
-
   img {
     vertical-align: top;
     max-width: 100%;
@@ -32,18 +31,18 @@ export const Container = styled.div`
     /* flex-item */
     margin-right: auto; /* 플렉스 아이템 개별 정렬 */
     margin-left: 30px;
-    /*width:100px;*/
+    /* width: 100px; */
   }
 
-  nav #gnb {
+  nav .gnb {
     /* flex-item / flex-container*/
     display: flex;
   }
-  nav #gnb > li {
+  nav .gnb > li {
     position: relative; /* 소메뉴 포지션 기준 */
   }
   /* 각 각의 대메뉴 제목 */
-  nav #gnb > li > a {
+  nav .gnb > li > a {
     font-weight: 700;
     font-size: 1.15rem;
     padding: 0 20px;
@@ -51,12 +50,12 @@ export const Container = styled.div`
     line-height: 60px;
     transition: 0.3s;
   }
-  nav #gnb > li > a:hover {
+  nav .gnb > li > a:hover {
     background-color: #fff;
     color: #000;
   }
   /* 소메뉴 */
-  nav #gnb .sub_menu {
+  nav .gnb .sub_menu {
     background-color: #fff;
     box-shadow: 0px 1.9px 2.2px rgba(0, 0, 0, 0.02),
       0px 4.5px 5.3px rgba(0, 0, 0, 0.028), 0px 8.4px 10px rgba(0, 0, 0, 0.035),
@@ -73,19 +72,19 @@ export const Container = styled.div`
     transform: translateY(20px);
     pointer-events: none; /* 마우스 포인트 이벤트 대상 없음. 마우스 커서의 기능 x */
   }
-  nav #gnb > li:hover .sub_menu {
+  nav .gnb > li:hover .sub_menu {
     opacity: 1;
     transform: translateY(0);
     width: 130px;
     pointer-events: all; /* 마우스 포인트 이벤트 대상 전부. 마우스 커서의 기능 */
   }
 
-  nav #gnb .sub_menu a {
+  nav .gnb .sub_menu a {
     font-weight: 600;
     padding: 10px 20px;
     transition: 0.3s;
   }
-  nav #gnb .sub_menu a:hover {
+  nav .gnb .sub_menu a:hover {
     color: rgb(86, 142, 226);
   }
   /***allmenu***/
@@ -161,7 +160,6 @@ export const Container = styled.div`
 
   /*main_gruop*/
   .main_group {
-    background: url(./images/an-img.jpg) no-repeat 50% / cover;
     height: 500px;
     text-transform: capitalize;
   }
@@ -197,7 +195,7 @@ export const Container = styled.div`
   }
 
   /*****main_product******/
-  #main_product {
+  .main_product {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr; /* 3열 */
     grid-auto-rows: 23vw;
@@ -205,29 +203,29 @@ export const Container = styled.div`
     margin: 50px auto 0;
     width: 70%;
   }
-  #main_product .main_product_bg {
+  .main_product .main_product_bg {
     background: no-repeat 50% / cover;
     overflow: hidden;
   }
-  #main_product .bg1 {
+  .main_product .bg1 {
     grid-column: 1 / 2;
     grid-row: 1/3;
     background-image: url(./images/m-op01.jpg);
   }
-  #main_product .bg2 {
+  .main_product .bg2 {
     background-image: url(./images/m-op02.jpg);
   }
-  #main_product .bg3 {
+  .main_product .bg3 {
     background-image: url(./images/m-op03.jpg);
   }
-  #main_product .bg4 {
+  .main_product .bg4 {
     background-image: url(./images/m-op04.jpg);
   }
-  #main_product .bg5 {
+  .main_product .bg5 {
     background-image: url(./images/m-op05.jpg);
   }
 
-  #main_product a {
+  .main_product a {
     font-size: 2rem;
     font-weight: 700;
     display: grid;
@@ -239,56 +237,57 @@ export const Container = styled.div`
     transform: translateY(30px);
     opacity: 0;
   }
-  #main_product .main_product_bg:hover a {
+  .main_product .main_product_bg:hover a {
     opacity: 1;
     transform: translateY(0);
     background-color: rgba(000, 000, 000, 0.8);
     color: #fff;
   }
 
-  #main_product .main_product_bg:hover p {
+  .main_product .main_product_bg:hover p {
     border: 1px solid #fff;
     padding: 10px 10px;
     text-align: center;
   }
 
   /****main_business***/
-  .main_business ul {
+  .main_business .business {
     display: flex;
     justify-content: center;
     margin: 30px 0 70px;
   }
-  .main_business ul li {
+  .main_business .business .businessList {
     margin: 1%;
     width: 300px;
     height: 300px;
   }
-  .main_business ul li.active {
+  .main_business .business .businessList.active {
     transform: scale(1.1);
   }
-  .main_business ul li h3 {
+  .main_business .business .businessList h3 {
     font-size: 1.2rem;
     font-weight: 600;
     padding: 20px 5px 0;
   }
-  .main_business ul li p {
+  .main_business .business .businessList p {
     padding: 10px 5px 20px;
   }
-  .main_business ul li .mb-wrap {
+  .main_business .business .businessList .mb-wrap {
     overflow: hidden;
   }
-  .main_business ul li:hover .mb-wrap {
+
+  .main_business .business .businessList:hover .mb-wrap {
     background-color: rgba(000, 000, 000, 0.8);
   }
-  .main_business ul li:hover img {
+  .main_business .business .businessList:hover img {
     transform: scale(1.1);
     transition: 0.5s ease;
     filter: brightness(0.5);
   }
-  .main_business ul li:hover h3 {
+  .main_business .business .businessList:hover h3 {
     color: rgb(78, 114, 212);
   }
-  .main_business ul li .mb-title {
+  .main_business .business .businessList .mb-title {
     background: #fff;
     text-align: left;
     padding: 15px 15px 15px 15px;
@@ -297,15 +296,14 @@ export const Container = styled.div`
     border-bottom: 1px solid #ddd;
   }
 
-  #main_inside {
-    background: url(./images/bn-img.jpg) no-repeat 50% / cover;
+  .main_inside {
     height: 500px;
     text-transform: capitalize;
     margin: 380px auto 0;
     color: #fff;
     background-attachment: scroll;
   }
-  #main_inside .inside_wrap {
+  .main_inside .inside_wrap {
     width: 100%;
     height: 100%;
     color: #fff;
@@ -313,40 +311,41 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
   }
-  #main_inside h2 {
+  .main_inside h2 {
     margin-top: 140px;
     font-size: 1.8rem;
     font-weight: 700;
     text-transform: uppercase;
   }
-  #main_inside p {
+  .main_inside p {
     margin-top: 10px;
     font-size: 16px;
     margin-bottom: 20px;
   }
-  #main_inside .ghost_btn2 {
+  .main_inside .ghost_btn2 {
     border: 1px solid #ddd;
     padding: 30px 80px;
+
     font-weight: 400;
     transition: 0.3s ease;
     text-transform: uppercase;
     font-size: 12px;
   }
-  #main_inside .info {
+  .main_inside .info {
     display: flex;
     flex-direction: row;
   }
-  #main_inside .info li {
+  .main_inside .info li {
     margin: 10px;
     height: 78px;
   }
 
-  #main_inside .info li:hover {
+  .main_inside .info li:hover {
     background-color: rgb(173, 207, 235);
   }
 
   /*footer */
-  #footerwrap {
+  .footerwrap {
     width: 100%;
     position: relative;
     clear: both;
@@ -355,14 +354,16 @@ export const Container = styled.div`
     border-top: 0px solid #eee;
     /* padding-right: 15px; */
     /* padding-left: 15px; */
+    /* background-color: red; */
   }
-  #footerwrap .footerinner {
+  .footerwrap .footerinner {
     /* padding-right: 15px; */
     /* padding-left: 15px; */
     margin-right: auto;
     margin-left: auto;
     position: relative;
     width: 1100px;
+
     /* background-color: red; */
   }
   footer {
@@ -378,7 +379,7 @@ export const Container = styled.div`
     vertical-align: middle;
   }
   footer .fnb {
-    padding-top: 25px;
+    /* padding-top: 25px; */
     padding-left: 110px;
     display: flex;
     color: #ddd;

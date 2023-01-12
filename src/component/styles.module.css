@@ -1,0 +1,15 @@
+:root {
+  --swiper-theme-color: rgb(71, 166, 255);
+  /* width: 20px; */
+}
+img {
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 18px;
+  height: 10px;
+}
+.swiper-pagination-bullet {
+  width: 300px;
+}

@@ -1,12 +1,14 @@
 {
   "files": {
     "main.css": "/FiveStoneReact/static/css/main.d2814f45.css",
-    "main.js": "/FiveStoneReact/static/js/main.3d3a318c.js",
+    "main.js": "/FiveStoneReact/static/js/main.113594ae.js",
     "static/media/m-op01.jpg": "/FiveStoneReact/static/media/m-op01.2e9d91ccc61eb060d1db.jpg",
     "static/media/visual01.jpg": "/FiveStoneReact/static/media/visual01.95908849cbc5cbc07894.jpg",
+    "static/media/visual02.jpg": "/FiveStoneReact/static/media/visual02.9de5535444a8f2a348a5.jpg",
     "static/media/m-ms04.jpg": "/FiveStoneReact/static/media/m-ms04.e56cf4aa670e25d10df2.jpg",
     "static/media/an-img.jpg": "/FiveStoneReact/static/media/an-img.bfafcf29fc041dc2ad25.jpg",
     "static/media/bn-img.jpg": "/FiveStoneReact/static/media/bn-img.ec8101f02d00834d05fc.jpg",
+    "static/media/visual03.jpg": "/FiveStoneReact/static/media/visual03.505457f206121409f184.jpg",
     "static/media/m-op05.jpg": "/FiveStoneReact/static/media/m-op05.53ca0511c5c6b8c8cde5.jpg",
     "static/media/m-ms02.jpg": "/FiveStoneReact/static/media/m-ms02.e349c7a593e9d451f3f2.jpg",
     "static/media/m-ms01.jpg": "/FiveStoneReact/static/media/m-ms01.363cbbd6a7da8e957210.jpg",
@@ -16,10 +18,10 @@
     "static/media/m-ms03.jpg": "/FiveStoneReact/static/media/m-ms03.4fc304466fdcce934b84.jpg",
     "index.html": "/FiveStoneReact/index.html",
     "main.d2814f45.css.map": "/FiveStoneReact/static/css/main.d2814f45.css.map",
-    "main.3d3a318c.js.map": "/FiveStoneReact/static/js/main.3d3a318c.js.map"
+    "main.113594ae.js.map": "/FiveStoneReact/static/js/main.113594ae.js.map"
   },
   "entrypoints": [
     "static/css/main.d2814f45.css",
-    "static/js/main.3d3a318c.js"
+    "static/js/main.113594ae.js"
   ]
 }

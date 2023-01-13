@@ -26,14 +26,28 @@ export const Container = styled.div`
   nav:hover {
     background-color: #fff;
   }
-
-  nav h1 {
-    /* flex-item */
+  nav .logo {
+    transform: translateY(50%);
+    opacity: 1;
+  }
+  nav:hover .logo {
+    opacity: 0;
+  }
+  nav .on {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  nav:hover .on {
+    opacity: 1;
+  }
+  .logoBox {
     margin-right: auto; /* 플렉스 아이템 개별 정렬 */
     margin-left: 30px;
-    /* width: 100px; */
   }
 
+  nav h1 {
+    margin-right: auto; /* 플렉스 아이템 개별 정렬 */
+  }
   nav .gnb {
     /* flex-item / flex-container*/
     display: flex;

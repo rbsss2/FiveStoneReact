@@ -1,15 +1,23 @@
 import React from "react";
 import img1 from "./images/logo.png";
+import img2 from "./images/logo-c.png";
 import { Link } from "react-router-dom";
 function Nav(props) {
   return (
     <div>
       <nav>
-        <h1 className="logo">
-          <Link to="/">
-            <img src={img1} alt="파이브스톤 로고" />
-          </Link>
-        </h1>
+        <div className="logoBox">
+          <h1 className="logo">
+            <Link to="/">
+              <img src={img1} alt="파이브스톤 로고" />
+            </Link>
+          </h1>
+          <h1 className="on">
+            <Link to="/">
+              <img src={img2} alt="파이브스톤 로고" />
+            </Link>
+          </h1>
+        </div>
         <ul className="gnb">
           <li>
             <a href="#">about</a>

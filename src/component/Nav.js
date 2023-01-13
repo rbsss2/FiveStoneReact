@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 import img1 from "./images/logo.png";
 import img2 from "./images/logo-c.png";
+
 import { Link } from "react-router-dom";
 function Nav(props) {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const updateScroll = () => {
+    setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", updateScroll);
+  });
   return (
     <div>
       <nav>
@@ -12,7 +21,7 @@ function Nav(props) {
               <img src={img1} alt="파이브스톤 로고" />
             </Link>
           </h1>
-          <h1 className="on">
+          <h1 className={scrollPosition < 100 ? "on" : "change_on"}>
             <Link to="/">
               <img src={img2} alt="파이브스톤 로고" />
             </Link>

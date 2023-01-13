@@ -40,6 +40,11 @@ export const Container = styled.div`
   nav:hover .on {
     opacity: 1;
   }
+
+  .change_on {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
   .logoBox {
     margin-right: auto; /* 플렉스 아이템 개별 정렬 */
     margin-left: 30px;

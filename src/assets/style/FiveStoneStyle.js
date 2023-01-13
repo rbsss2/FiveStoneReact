@@ -198,7 +198,7 @@ export const Container = styled.div`
   .main_product {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr; /* 3열 */
-    grid-auto-rows: 23vw;
+    grid-auto-rows: 18vw;
     gap: 5px;
     margin: 50px auto 0;
     width: 70%;
@@ -237,16 +237,22 @@ export const Container = styled.div`
     transform: translateY(30px);
     opacity: 0;
   }
+  .main_product p {
+    text-align: center;
+  }
   .main_product .main_product_bg:hover a {
     opacity: 1;
     transform: translateY(0);
     background-color: rgba(000, 000, 000, 0.8);
     color: #fff;
+    transition: 0.3s;
   }
 
   .main_product .main_product_bg:hover p {
     border: 1px solid #fff;
     padding: 10px 10px;
+    margin-top: 10px;
+
     text-align: center;
   }
 

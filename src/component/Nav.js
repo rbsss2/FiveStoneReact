@@ -1,11 +1,14 @@
 import React from "react";
-import img1 from "./images/logo-c.png";
+import img1 from "./images/logo.png";
+import { Link } from "react-router-dom";
 function Nav(props) {
   return (
     <div>
       <nav>
         <h1 className="logo">
-          <img src={img1} alt="파이브스톤 로고" />
+          <Link to="/">
+            <img src={img1} alt="파이브스톤 로고" />
+          </Link>
         </h1>
         <ul className="gnb">
           <li>

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FiveStoneReact/static/css/main.d2814f45.css",
-    "main.js": "/FiveStoneReact/static/js/main.113594ae.js",
+    "main.js": "/FiveStoneReact/static/js/main.fe5475bd.js",
     "static/media/m-op01.jpg": "/FiveStoneReact/static/media/m-op01.2e9d91ccc61eb060d1db.jpg",
     "static/media/visual01.jpg": "/FiveStoneReact/static/media/visual01.95908849cbc5cbc07894.jpg",
     "static/media/visual02.jpg": "/FiveStoneReact/static/media/visual02.9de5535444a8f2a348a5.jpg",
@@ -18,10 +18,10 @@
     "static/media/m-ms03.jpg": "/FiveStoneReact/static/media/m-ms03.4fc304466fdcce934b84.jpg",
     "index.html": "/FiveStoneReact/index.html",
     "main.d2814f45.css.map": "/FiveStoneReact/static/css/main.d2814f45.css.map",
-    "main.113594ae.js.map": "/FiveStoneReact/static/js/main.113594ae.js.map"
+    "main.fe5475bd.js.map": "/FiveStoneReact/static/js/main.fe5475bd.js.map"
   },
   "entrypoints": [
     "static/css/main.d2814f45.css",
-    "static/js/main.113594ae.js"
+    "static/js/main.fe5475bd.js"
   ]
 }

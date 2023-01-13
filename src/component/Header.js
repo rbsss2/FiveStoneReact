@@ -16,7 +16,7 @@ function Header(props) {
           dynamicBullets: true,
         }}
         autoplay={{
-          delay: 20000000,
+          delay: 2000,
         }}
         loop={true}
         navigation
